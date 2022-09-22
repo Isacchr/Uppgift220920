@@ -13,27 +13,31 @@
     <div id="divInput">
 
         <label for="kundNamn">Full name:</label>
-        <input type="text" id="customerName">
+        <input type="text" placeholder="Full Name" id="customerName">
 
-        <label for="kundTelefonNr">Telephone Number:</label>
-        <input type="number" id="customerTelephoneNr">
+        <label for="kundPhoneNr">Telephone Number:</label>
+        <input type="number" placeholder="Phone number" id="customerPhoneNr">
 
         <label for="kundAdress">Adress:</label>
-        <input type="text" id="customerAdress">
+        <input type="text" placeholder="Adress" id="customerAdress">
 
         <label for="kundEmail">Email:</label>
-        <input type="email" id="customerEmail">
+        <input type="email" placeholder="Email" id="customerEmail">
         <button onclick="submitInfo()">Submit</button>
 
     </div>
 
 
 
-    <div id="customerList">
+    <div id="customerList" hidden>
 
         <h1>Customer List</h1>
 
+        <ul id="customerListUL">
+
+        </ul>
+
     </div>
-    
+
 </body>
 </html>
