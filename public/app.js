@@ -20,4 +20,9 @@ function submitInfo() {
 
     console.log(customerInfo);
 
-}
+    document.getElementById('customerName').value = '';
+    document.getElementById('customerTelephoneNr').value = '';
+    document.getElementById('customerAdress').value = '';
+    document.getElementById('customerEmail').value = '';
+    
+    }
