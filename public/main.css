@@ -7,11 +7,11 @@ body {
     width: 50%;
 }
 
-#customerSearch {
+#divCustomerSearch {
     float: right;
 }
 
-#customerList {
+#divCustomerList {
     float: left;
     width: 50%;
     margin-right: 200px;

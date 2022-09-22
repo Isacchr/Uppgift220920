@@ -11,7 +11,7 @@ var orderCustomerInfo = {
 build = () => {
 
     const divInput = document.getElementById('divInput');
-    const divCustomerList = document.getElementById('customerList');
+    const divCustomerList = document.getElementById('divCustomerList');
 
     const hideShowBtn = document.createElement('button');
     hideShowBtn.onclick = () => divCustomerList.hidden = true; 
@@ -49,4 +49,17 @@ submitInfo = () => {
     document.getElementById('customerAdress').value = '';
     document.getElementById('customerEmail').value = '';
 
+}
+
+Search = () => {
+
+    var inputId = document.getElementById('customerSearch').value;
+    var searchIdResult = document.getElementById('searchResult');
+
+    findEmail = (persons => {
+        return persons.Email === inputId
+    });
+
+    searchIdResult.innerHTML = (` Name: ${customerInfo.find(findEmail).Name} | Phone-Number: ${customerInfo.find(findEmail).PhoneNumber} 
+     | Adress: ${customerInfo.find(findEmail).Adress} | Email: <a href="mailto:${customerInfo.find(findEmail).Email}">${customerInfo.find(findEmail).Email}</a>`);
 }

@@ -28,14 +28,16 @@
         <button onclick="submitInfo()">Submit</button>
     </div>
 
-    <div id="customerSearch">
+    <div id="divCustomerSearch">
 
-        <input type="text" placeholder="Search">
-        <button>Search</button>
+        <input type="text" placeholder="Search" id="customerSearch">
+        <button onclick="Search()">Search</button>
+        <br>
+        <p id="searchResult"></p>
 
     </div>
 
-    <div id="customerList" hidden>
+    <div id="divCustomerList" hidden>
 
         <h1>Customer List</h1>
 
