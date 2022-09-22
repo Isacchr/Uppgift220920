@@ -37,7 +37,7 @@ submitInfo = () => {
 
     customerInfo.forEach(customer => {
         var listElements = document.createElement('li');
-        listElements.innerHTML = (`Customers: Name: ${customer.Name} || Phone-Number: ${customer.PhoneNumber} || Email: ${customer.Email}`);
+        listElements.innerHTML = (`Customers: Name: ${customer.Name} || Phone-Number: ${customer.PhoneNumber} || Email: <a href="mailto:${customer.Email}">${customer.Email}</a> `);
 
         ULcustomers.appendChild(listElements);
     })

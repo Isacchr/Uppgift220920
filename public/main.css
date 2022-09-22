@@ -2,10 +2,18 @@ body {
     background-color: lightsalmon;
 }
 
-#divInput{
-
+#divInput {
+    float: left;
+    width: 50%;
 }
 
-#customerList{
-    
+#customerSearch {
+    float: right;
 }
+
+#customerList {
+    float: left;
+    width: 50%;
+    margin-right: 200px;
+}
+
